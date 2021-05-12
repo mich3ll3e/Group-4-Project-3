@@ -8,8 +8,9 @@ import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
 import "./styles.css";
 //import register from "../../registerServiceWorker";
-
 class Register extends Component {
+ 
+
     constructor() {
         super();
         this.state = {
@@ -60,10 +61,11 @@ class Register extends Component {
           <div className="container a-w a-i">
             <form noValidate onSubmit={this.onSubmit}>
                 <div className="icon"><FontAwesomeIcon icon={faUserLock} size="3x"/>  </div>
-                <h3 style={{marginTop:'20px'}}>Sign Up</h3>
-
+                <h3 style={{marginTop:'20px'}}>Unite Us</h3>
+                <h4 style={{marginTop:'20px'}}>Sign up</h4>
+                  <br/>
                 <div className="form-group">
-                    <label>First name</label>
+                    <label>First name:</label>
                     <span className="red-text">{errors.firstName}</span>
                     <input 
                         type="text" 
@@ -77,7 +79,7 @@ class Register extends Component {
                 </div>
 
                 <div className="form-group">
-                    <label>Last name</label>
+                    <label>Last name:</label>
                     <span className="red-text">{errors.LastName}</span>
                     <input 
                       type="text" 
@@ -91,7 +93,7 @@ class Register extends Component {
                 </div>
 
                 <div className="form-group">
-                    <label>Email address</label>
+                    <label>Email address:</label>
                     <span className="red-text">{errors.email}</span>
                     <input 
                        type="email" 
@@ -105,7 +107,7 @@ class Register extends Component {
                 </div>
 
                 <div className="form-group">
-                    <label>Password</label>
+                    <label>Password:</label>
                     <span className="red-text">{errors.password}</span>
                     <input 
                        type="password"
@@ -118,7 +120,7 @@ class Register extends Component {
                         />
                 </div>
                 <div className="form-group">
-                    <label>Confirm password</label>
+                    <label>Confirm password:</label>
                     <span className="red-text">{errors.password2}</span>
                     <input 
                       type="password" 
@@ -131,7 +133,7 @@ class Register extends Component {
                      />
                 </div>
 
-                <button type="submit" className="btn btn-primary btn-block">Sign Up</button>
+                <button type="submit" className="btn btn-primary btn-block">Sign Up!</button>
                 <p className="forgot-password text-right">
                     Already registered  <Link to={"/"}>sign in?</Link>
                 </p>
